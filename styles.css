@@ -33,6 +33,17 @@ p{
     padding-right: 15px;
     padding-left: 15px;
 }
+/* SECTION MENU */
+.section-menu{
+    width: 70%;
+
+}
+.navbar li{
+    display: inline-block;
+}
+.navbar a{
+    text-decoration: none;
+}
 
 /* SECTION INTRO */
 #intro{
