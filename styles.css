@@ -61,6 +61,16 @@ nav{
     text-decoration: none;
     color: #000;
 }
+.container-menu{
+    position: relative;
+}
+.sub-menu{
+    height: 100px;
+}
+    .sub-menu li{
+        display: block;
+        position: absolute;
+    }
 
 /* SECTION INTRO */
 #intro{
