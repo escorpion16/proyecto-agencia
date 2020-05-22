@@ -34,15 +34,32 @@ p{
     padding-left: 15px;
 }
 /* SECTION MENU */
-.section-menu{
-    width: 70%;
-
+nav{
+    width: 100%;
+    position: fixed;
+    padding-top: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.125);
+}
+.navbar{
+    justify-content: space-around;
 }
 .navbar li{
     display: inline-block;
+    padding: 5px 5px 5px 2px;
+    margin-right: 5px;
+}
+    li:hover{
+        background-color: rgba(0,0,0,.10);
+        border-color: rgba(0,0,0,.30);
+    }
+.navbar ul li:hover{
+    border-left: 5px solid rgba(61, 61, 61, 0.4);
 }
 .navbar a{
+    cursor: pointer;
     text-decoration: none;
+    color: #000;
 }
 
 /* SECTION INTRO */
