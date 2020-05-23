@@ -5,6 +5,10 @@
     font-weight: normal;
     box-sizing: border-box;
 }
+body{
+    font-size: 14px;
+    font-weight: 400;
+}
 h1,h2,h3,h4,h5,h6{
     font-weight: 400;
     line-height: 1.2;
@@ -39,38 +43,50 @@ nav{
     position: fixed;
     padding-top: 10px;
     background-color: #f8f8f8;
-    box-shadow: 1px 2px 1px rgba(0,0,0,.125);
+    box-shadow: 1px 2px 1px rgba(0,0,0,.09);
 }
 .navbar{
     justify-content: space-around;
 }
 .navbar li{
     display: inline-block;
-    padding: 5px 5px 5px 2px;
+    padding: 5px 20px 5px 2px;
     margin-right: 5px;
 }
     li:hover{
         background-color: rgba(0,0,0,.10);
         border-color: rgba(0,0,0,.30);
     }
+.navbar ul{
+    list-style: none;
+}
 .navbar ul li:hover{
     border-left: 5px solid rgba(61, 61, 61, 0.4);
+    transition: all .3s;
 }
 .navbar a{
     cursor: pointer;
     text-decoration: none;
     color: #000;
 }
-.container-menu{
+
+.container-nav > li{
     position: relative;
 }
-.sub-menu{
-    height: 100px;
+
+.container-nav li a{
+    letter-spacing: 2.1px;
 }
-    .sub-menu li{
-        display: block;
-        position: absolute;
-    }
+.sub-menu{
+    position: absolute;
+    width: 120%;
+    background-color: #f8f8f8;
+    display: none;
+    padding-top: 50px;
+}   
+.container-nav li:hover .sub-menu{
+    display: block;
+}
 
 /* SECTION INTRO */
 #intro{
@@ -79,9 +95,15 @@ nav{
 }
 .intro-title{
     font-size: 60px;
+    line-height: 85px;
+    letter-spacing: 6px;
+    color: #282828;
 }
 .intro-subtitle{
     font-size: 20px;
+    color: #282828;
+    letter-spacing: 2.7px;
+    
 }
 
 /* HELPERS */
